@@ -1,0 +1,131 @@
+.capabilities-section {
+  position: relative;
+  padding: 6rem 5vw;
+  display: grid;
+  gap: 3.5rem;
+}
+
+.capabilities-section::before {
+  content: "";
+  position: absolute;
+  inset: auto -20% -35% -20%;
+  height: 60%;
+  background: radial-gradient(circle at 50% 0%, rgba(80, 217, 255, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.capabilities-section__header {
+  max-width: 760px;
+  display: grid;
+  gap: 1.2rem;
+  z-index: 1;
+}
+
+.capabilities-section__eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+  color: rgba(138, 219, 255, 0.7);
+}
+
+.capabilities-section__title {
+  font-size: clamp(2.1rem, 4.5vw, 3.1rem);
+  font-weight: 700;
+  color: var(--color-ink-strong);
+}
+
+.capabilities-section__subtitle {
+  font-size: 1.05rem;
+  color: rgba(206, 214, 255, 0.8);
+  max-width: 60ch;
+}
+
+.capabilities-section__grid {
+  position: relative;
+  display: grid;
+  gap: 1.8rem;
+  z-index: 1;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.capabilities-section__card {
+  position: relative;
+  padding: 2.4rem 2.3rem;
+  border-radius: 24px;
+  background: rgba(11, 16, 52, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  display: grid;
+  gap: 1.1rem;
+  overflow: hidden;
+  box-shadow: 0 16px 32px rgba(6, 10, 42, 0.55);
+  min-height: 360px;
+}
+
+.capabilities-section__card-beam {
+  position: absolute;
+  inset: -50% 25% auto 25%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(255, 79, 216, 0.35), transparent 60%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.capabilities-section__card:hover .capabilities-section__card-beam {
+  opacity: 1;
+}
+
+.capabilities-section__card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-ink-strong);
+  z-index: 1;
+}
+
+.capabilities-section__card-description {
+  color: rgba(214, 218, 255, 0.8);
+  z-index: 1;
+}
+
+.capabilities-section__list {
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.capabilities-section__list-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  color: rgba(235, 237, 255, 0.9);
+  font-weight: 500;
+}
+
+.capabilities-section__bullet {
+  width: 26px;
+  height: 26px;
+  display: inline-grid;
+  place-items: center;
+}
+
+.capabilities-section__bullet svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 960px) {
+  .capabilities-section__card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .capabilities-section {
+    padding-inline: 1.5rem;
+  }
+}
+

@@ -1,0 +1,23 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="botBody" x1="35" y1="40" x2="205" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5AE0FF"/>
+      <stop offset="1" stop-color="#9875FF"/>
+    </linearGradient>
+    <radialGradient id="botGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 120) rotate(90) scale(120)">
+      <stop stop-color="#6EF0FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0A0F33" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="120" cy="120" r="120" fill="url(#botGlow)"/>
+  <rect x="58" y="60" width="124" height="124" rx="56" fill="url(#botBody)"/>
+  <rect x="72" y="80" width="96" height="68" rx="34" fill="#0F153D"/>
+  <rect x="88" y="92" width="24" height="24" rx="12" fill="#87F7FF"/>
+  <rect x="128" y="92" width="24" height="24" rx="12" fill="#87F7FF"/>
+  <path d="M96 140C106 156 134 156 144 140" stroke="#0F153D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 130C40 114.536 52.536 102 68 102" stroke="#5AE0FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M200 130C200 114.536 187.464 102 172 102" stroke="#9875FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M92 180C102 194 138 194 148 180" stroke="#0F153D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="68" cy="154" r="10" fill="#5AE0FF"/>
+  <circle cx="172" cy="154" r="10" fill="#AC8DFF"/>
+</svg>

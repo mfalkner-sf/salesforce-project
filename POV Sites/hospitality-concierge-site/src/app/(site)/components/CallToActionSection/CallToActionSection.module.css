@@ -1,0 +1,98 @@
+.cta-section {
+  position: relative;
+  margin: 0 auto 6rem;
+  padding: 5rem 5vw;
+  display: grid;
+  justify-items: center;
+}
+
+.cta-section__aura {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(127, 93, 255, 0.28), transparent 70%);
+  pointer-events: none;
+}
+
+.cta-section__body {
+  position: relative;
+  width: min(880px, 100%);
+  padding: 3.6rem 3.4rem;
+  border-radius: 36px;
+  background: linear-gradient(140deg, rgba(14, 18, 58, 0.96), rgba(32, 39, 109, 0.82));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(24px);
+  display: grid;
+  gap: 1.4rem;
+  text-align: center;
+  box-shadow: 0 28px 55px rgba(6, 9, 42, 0.55);
+}
+
+.cta-section__eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: rgba(162, 219, 255, 0.72);
+}
+
+.cta-section__title {
+  font-size: clamp(2.15rem, 4.5vw, 3rem);
+  font-weight: 700;
+  color: var(--color-ink-strong);
+}
+
+.cta-section__description {
+  color: rgba(214, 222, 255, 0.82);
+}
+
+.cta-section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+.cta-section__primary,
+.cta-section__secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.cta-section__primary {
+  background: linear-gradient(120deg, #ff74ff 0%, #50dbff 100%);
+  color: #0a103d;
+  box-shadow: 0 18px 38px rgba(14, 22, 64, 0.45);
+}
+
+.cta-section__primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px rgba(18, 26, 70, 0.6);
+}
+
+.cta-section__secondary {
+  background: rgba(7, 13, 46, 0.72);
+  color: var(--color-ink-strong);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+}
+
+.cta-section__secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(12, 20, 60, 0.78);
+}
+
+@media (max-width: 640px) {
+  .cta-section {
+    padding-inline: 1.5rem;
+  }
+
+  .cta-section__body {
+    padding: 2.6rem 2.3rem;
+  }
+}
+

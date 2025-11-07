@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="avatarHalo" x1="95" y1="52" x2="417" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7F5DFF"/>
+      <stop offset="1" stop-color="#46D8FF"/>
+    </linearGradient>
+    <linearGradient id="avatarSuit" x1="152" y1="316" x2="360" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D265D"/>
+      <stop offset="1" stop-color="#0F153D"/>
+    </linearGradient>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="224" fill="url(#avatarHalo)" opacity="0.65"/>
+  <rect x="64" y="64" width="384" height="384" rx="192" fill="#0D123A"/>
+  <path d="M256 292C304.601 292 344 252.601 344 204C344 155.399 304.601 116 256 116C207.399 116 168 155.399 168 204C168 252.601 207.399 292 256 292Z" fill="#F8F3FF"/>
+  <path d="M188 216C198 236 220 246 256 246C292 246 314 236 324 216C324 252 300 296 256 296C212 296 188 252 188 216Z" fill="#F0DEFF"/>
+  <path d="M165 399.5C165 334.786 217.286 282.5 282 282.5H284C348.714 282.5 401 334.786 401 399.5V430C401 442.703 390.703 453 378 453H188C175.297 453 165 442.703 165 430V399.5Z" fill="url(#avatarSuit)"/>
+  <path d="M240 317L192 382L216 397L240 356L256 381L272 356L296 397L320 382L272 317H240Z" fill="#50D7FF"/>
+  <path d="M205 210C210 196 216 188 224 188" stroke="#0F153B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M307 210C302 196 296 188 288 188" stroke="#0F153B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M232 228C236 236 244 240 256 240C268 240 276 236 280 228" stroke="#0F153B" stroke-width="10" stroke-linecap="round"/>
+</svg>
